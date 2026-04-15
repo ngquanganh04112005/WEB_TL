@@ -1,0 +1,540 @@
+:root {
+    --main-bg: #ffffffb2;
+    --main-text: #000000;
+    --text-color:white;
+    --main-red: #e60023;
+
+    --hover-red: #ff3352;
+    --hover-dark: #333333;
+
+    --gray-medium: #ccc;  
+
+    --font-main: 'Roboto', sans-serif;
+    /* Hoặc */
+    --font-heading: 'Montserrat', sans-serif;
+
+    --bg-card:#f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;      /* Phủ kín chiều cao màn hình */
+    width: 100%;            /* Phủ kín chiều ngang */
+    font-family: var(--font-main);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+.container-header0{
+    background-color: #fff;
+}
+
+.container-header{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.logo h1 {
+    color: var(--main-red);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: var(--main-red);
+    font-size: 14px;
+}
+
+/* SEARCH */
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10x;
+    border: 1px solid #ccc;
+    outline: none;
+    height: 34px;
+    padding-left: 12px;
+}
+
+.search-box button {
+    background: var(--main-red);
+    border: none;
+    padding: 10px 15px;
+    height: 34px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.search-box button:hover {
+    background-color: var(--hover-red);
+}
+
+/* RIGHT SIDE */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* SOCIAL ICON */
+.social {
+    display: flex;          /* Kích hoạt Flexbox */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;     /* Căn giữa theo chiều dọc */
+    gap: 15px;              /* Tạo khoảng cách giữa các icon */
+    padding: 20px;          /* Khoảng trống xung quanh cụm icon */
+}
+
+.social a{
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.social a:hover{
+    background-color: var(--hover-red);
+}
+
+.social i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    
+    /* Tạo viền */
+    width: 30px;            /* Độ rộng của vòng viền */
+    height: 30px;           /* Chiều cao của vòng viền */
+    border: 2px solid #ccc; /* Độ dày và màu sắc của viền */
+    border-radius: 4px;   
+    transition: 0.3s;  
+}
+
+.social i:hover{
+    color: white;
+    border: 2px solid var(--hover-red);
+}
+
+/* LOGIN */
+.login {
+    text-decoration: none;
+    color: var(--main-text);
+    font-size: 12px;
+    border-left: 1px solid #ccc ;
+    padding: 0 10px;
+    border-right: 1px solid #ccc ;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.login:hover {
+    color: var(--main-red);
+}
+
+/* CART */
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart i {
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cart i:hover {
+    color: var(--main-red);
+}
+
+.cart-dropdown {
+    position: absolute;
+    top: 35px;
+    right: 0;
+
+    width: 250px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 300px;
+
+    opacity: 0;              
+    visibility: hidden;   
+    transform: translateY(10px);
+    transition: 0.3s;
+
+    z-index: 999;
+}
+
+/* Hover vào cart mới hiện */
+.cart:hover .cart-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.cart-empty {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+    color: #888;
+}
+
+/* icon giỏ nhạt màu */
+.cart-empty i {
+    font-size: 100px;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+/* text */
+.cart-empty p {
+    font-size: 14px;
+}
+
+/* SIDE BAR */
+
+#space {
+    padding-bottom: 100px;
+    background-color: #f5f5f5;
+}
+
+.container-side-bar{
+    background-color: #F5F5F5;
+}
+
+.side-bar{
+    background-color: #e60023;
+    width: 100%;
+}
+
+.side-main{
+    width: 1400px;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Menu */
+.btn-menu {
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
+    position: relative;
+    display: inline-block; /* Quan trọng: Để container ôm khít nút */
+}
+
+.btn-menu button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    /* Reset margin để không gây lệch */
+    margin: 0;
+    gap: 8px;
+}
+
+#menu {
+    position: absolute;
+    /* Đẩy xuống hẳn 10px so với đáy của button */
+    top: calc(100% + 10px); 
+    left: 0;
+    width: 250px;
+    
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    
+    /* Đổ bóng mạnh hơn để tạo lớp tách biệt */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    z-index: 9999;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: var(--main-text);
+}
+
+#menu li {
+    padding: 12px 10px;
+    border-bottom: 1px solid;
+    transition: background 0.2s;
+}
+
+#menu li:hover {
+    background: #f5f5f5;
+}
+
+#menu li {
+    padding: 12px 20px; /* Tăng padding để dễ bấm, không bị dính chữ */
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.2s ease; /* Hiệu ứng mượt khi di chuột */
+    border-bottom: 1px solid #f5f5f5; /* Gạch chân nhẹ giữa các mục */
+}
+
+/* Button */
+.btn-menu button {
+    background: var(--main-red);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Mũi tên */
+.arrow {
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* Khi mở menu → xoay xuống */
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+/*BTN-SP*/
+.btn-sp {
+    margin-left: 30px;
+}
+
+.btn-sp a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-right: 1px solid var(--bg-card);
+}
+
+/*GAME ĐANG HOT */
+/* Container chính chứa danh sách game */
+
+.container-game{
+    background-color: #F5F5F5;
+}
+
+.game{
+    padding-bottom: 100px;
+    display: grid;
+    /* Chia làm 4 cột bằng nhau */
+    grid-template-columns: repeat(4, 1fr); 
+    /* Khoảng cách giữa các ô */
+    gap: 10px; 
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+/* Tiêu đề "Game Đang Hot" - Trải dài hết các cột */
+.game h1 {
+    grid-column: 1 / -1; 
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Thẻ chứa từng game */
+.game-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Định dạng hình ảnh */
+.game-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 9; /* Giữ khung hình chuẩn cho banner */
+    object-fit: cover;
+}
+
+/* Phần thông tin game (game-if) nằm ngay dưới ảnh */
+.game-if {
+    padding: 12px 12px 5px 12px;
+    flex-grow: 1; /* Giúp đẩy phần giá xuống dưới cùng nếu tên game ngắn */
+}
+
+.game-if p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.4;
+    /* Giới hạn tên game trong 2 dòng để đều layout */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Phần giá game nằm dưới cùng */
+.game-price {
+    padding: 5px 12px 15px 12px;
+}
+
+.game-price, .game-price p {
+    margin: 0;
+    font-size: 12px;
+    color: #e74c3c; /* Màu đỏ cho giá tiền */
+    font-weight: 800;
+}
+
+/* Responsive: Tự động điều chỉnh số cột trên màn hình nhỏ */
+@media (max-width: 1024px) {
+    .game-hot {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .game-hot {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .game-hot {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/*FOOTER*/
+.container-footer {
+    width: 100%;
+    background-color: var(--main-bg);
+    color: #fff;
+    padding-top: 100px;
+    /* Giảm padding-top để footer bớt thừa khoảng trắng bên trên */
+    padding: 30px 0 70px 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.foot {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 50px;
+    color: #000000;
+}
+
+.foot-main {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Giảm gap để gọn hơn */
+}
+
+/* Xóa margin mặc định của h1 để bớt trống phía trên */
+.logo h1 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 800;
+}
+
+
+/* Chỉnh text lưu ý mỏng lại và đổi màu xám trắng cho đẹp */
+.foot-if p {
+    line-height: 1.6;
+    font-size: 14px;
+    max-width: 500px;
+    font-weight: 400; /* Đảm bảo không bị đậm */
+    margin-top: 5px;
+}
+
+.foot-aside h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 0; /* Xóa khoảng trống trên tiêu đề */
+    margin-bottom: 20px;
+}
+
+/* Container cho mỗi dòng icon + chữ */
+.foot-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+}
+
+
+/* Xử lý riêng cho chữ: KHÔNG ĐẬM */
+.foot-link span {
+    font-size: 13px;
+    font-weight: 400; /* Ép chữ về độ dày bình thường */
+    letter-spacing: 0.5px;
+}
+
+/* Xử lý icon */
+.foot-link i {
+    font-size: 14px;
+    width: 18px; /* Cố định chiều rộng icon để chữ thẳng hàng */
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .game-container {
+        grid-template-columns: repeat(2, 1fr); /* Còn 2 cột */
+    }
+}
+
+/* Cho điện thoại (Dưới 600px) */
+@media (max-width: 600px) {
+    .game-container {
+        grid-template-columns: 1fr; /* Chỉ 1 cột duy nhất */
+    }
+    .header-title {
+        font-size: 1.2rem; /* Giảm cỡ chữ tiêu đề */
+    }
+}

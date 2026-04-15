@@ -1,0 +1,129 @@
+:root {
+    --main-bg: #ffffffb2;
+    --main-text: #000000;
+    --text-color:white;
+    --main-red: #e60023;
+
+    --hover-red: #ff3352;
+    --hover-dark: #333333;
+
+    --gray-medium: #ccc;  
+
+    --font-main: 'Roboto', sans-serif;
+    /* Hoặc */
+    --font-heading: 'Montserrat', sans-serif;
+
+    --bg-card:#f5f5f5;
+}
+
+.container-page-login {
+    min-height: 600px;
+    display: flex; /* Căn giữa form theo cả 2 chiều */
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.page-login {
+    background-color: var(--main-bg);
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px); /* Hiệu ứng mờ ảo nếu nền là ảnh */
+}
+
+.page-login h2 {
+    font-family: var(--font-heading);
+    color: var(--main-red);
+    margin-bottom: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Style cho các ô nhập liệu */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid var(--gray-medium);
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.input-group input:focus {
+    border-color: var(--main-red);
+    box-shadow: 0 0 5px rgba(230, 0, 35, 0.2);
+}
+
+/* Options & Button */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.form-options a {
+    text-decoration: none;
+    color: var(--main-red);
+    font-weight: bold;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--main-red);
+    color: var(--text-color);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background-color: var(--hover-red);
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: var(--main-red);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .game-container {
+        grid-template-columns: repeat(2, 1fr); /* Còn 2 cột */
+    }
+}
+
+/* Cho điện thoại (Dưới 600px) */
+@media (max-width: 600px) {
+    .game-container {
+        grid-template-columns: 1fr; /* Chỉ 1 cột duy nhất */
+    }
+    .header-title {
+        font-size: 1.2rem; /* Giảm cỡ chữ tiêu đề */
+    }
+}
