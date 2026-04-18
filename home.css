@@ -452,12 +452,13 @@ html{
     background-color: #F5F5F5;
 }
 
-.game{
+.game {
     padding-bottom: 100px;
     display: grid;
-    /* Chia làm 4 cột bằng nhau */
-    grid-template-columns: repeat(4, 1fr); 
-    /* Khoảng cách giữa các ô */
+    
+    /* MẶC ĐỊNH CHO MOBILE: Chia 2 cột */
+    grid-template-columns: repeat(2, 1fr); 
+    
     gap: 10px; 
     max-width: 1200px;
     margin: 0 auto;
@@ -527,24 +528,19 @@ html{
 }
 
 /* Responsive: Tự động điều chỉnh số cột trên màn hình nhỏ */
-@media (max-width: 1024px) {
-    .game-hot {
+@media (min-width: 1024px) {
+    .game {
+        /* Chuyển thành 4 cột trên máy tính */
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+/* TÙY CHỌN: Nếu muốn máy tính bảng (Tablet) hiện 3 cột */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .game {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
-@media (max-width: 768px) {
-    .game-hot {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .game-hot {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 /*FOOTER*/
 .container-footer {
