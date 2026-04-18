@@ -26,766 +26,830 @@
 </head>
 
 <body>
-    <div class="container-header0">
-        <div class="container-header">
-            <header class="header">
-                <!-- Logo -->
-                <div class="logo">
-                    <h1>ChonGame<span>.com</span></h1>
-                </div>
-
-                <!-- Search -->
-                <div class="search-box">
-                    <input type="text" placeholder="Gõ để tìm kiếm...">
-                    <button><i class="fa fa-search"></i></button>
-                </div>
-
-                <!-- Right -->
-                <div class="header-right">
-                    <!-- Social -->
-                    <div class="social">
-                        <a href="https://www.facebook.com/login/?locale=vi_VN"><i
-                                class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/vi-VN/"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-regular fa-envelope"></i></a>
-                        <a href="https://www.youtube.com/?app=desktop&hl=vi"><i class="fa-brands fa-youtube"></i></a>
+    <div class="container">
+        <div class="container-header0">
+            <div class="container-header">
+                <header class="header">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <h1>ChonGame<span>.com</span></h1>
                     </div>
 
-                    <!-- Login -->
-                    <a href="./login.html" class="login">ĐĂNG NHẬP / ĐĂNG KÝ</a>
+                    <!-- Search -->
+                    <div class="search-box">
+                        <input type="text" placeholder="Gõ để tìm kiếm...">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
 
-                    <!-- Cart -->
-                    <div class="cart">
-                        <i class="fa fa-bag-shopping"></i>
+                    <!-- Right -->
+                    <div class="header-right">
+                        <!-- Social -->
+                        <div class="social">
+                            <a href="https://www.facebook.com/login/?locale=vi_VN"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/vi-VN/"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-regular fa-envelope"></i></a>
+                            <a href="https://www.youtube.com/?app=desktop&hl=vi"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </div>
 
-                        <div class="cart-dropdown">
+                        <!-- Login -->
+                        <a href="./login.html" class="login">ĐĂNG NHẬP / ĐĂNG KÝ</a>
 
-                            <!-- Trạng thái rỗng -->
-                            <div class="cart-empty">
-                                <i class="fa fa-bag-shopping"></i>
-                                <p>Bạn chưa có sản phẩm nào</p>
+                        <!-- Cart -->
+                        <div class="cart">
+                            <i class="fa fa-bag-shopping"></i>
+
+                            <div class="cart-dropdown">
+
+                                <!-- Trạng thái rỗng -->
+                                <div class="cart-empty">
+                                    <i class="fa fa-bag-shopping"></i>
+                                    <p>Bạn chưa có sản phẩm nào</p>
+                                </div>
+
                             </div>
+                        </div>
+                </header>
+            </div>
+        </div>
 
+        <div class="container-side-bar">
+            <div class="side-bar">
+                <div class="side-main">
+                    <div class="btn-menu">
+                        <button onclick="toggleMenu()">
+                            <span class="menu-icon">
+                                <i class="fa-solid fa-bars"></i>
+                            </span>
+                            Danh mục sản phẩm
+                            <span class="arrow">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </button>
+
+                        <ul id="menu">
+                            <li><a href="#game-hot">Game Đang Hot</a></li>
+                            <li><a href="#steam-key">Steam Key Chính Hãng</a></li>
+                            <li><a href="#account-mail">Tài Khoản Steam mới và Mail</a></li>
+                            <li><a href="#account-off">Tài Khoản Steam Offline</a></li>
+                            <li><a href="#account-on">Tài Khoản Steam Online</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-sp">
+                        <a href="#">Trang chủ</a>
+                        <a href="protectuser.html">Chính sách bảo hành</a>
+                        <a href="./protectsp.html">Chính sách đổi trả</a>
+                        <a href="./connect.html">Liên hệ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-wrapper">
+            <div class="slider-wrapper">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://kamikey.com/wp-content/uploads/2024/12/the-last-of-us-part-1-1000x563.jpg" alt="Game 1">
+                            <div class="game-info">
+                                <h3>The last of us Part I</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://kamikey.com/wp-content/uploads/2025/08/The-Last-of-Us-Part-II-Remastered-steam-key-1000x563.jpg" alt="Game 2">
+                            <div class="game-info">
+                                <h3>The last of us Part II</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://kamikey.com/wp-content/uploads/2024/12/Hogwarts-Legacy-1000x563.jpg" alt="Game 2">
+                            <div class="game-info">
+                                <h3>Hogwarts Legacy</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://kamikey.com/wp-content/uploads/2025/04/Clair-Obscur-Expedition-33-1000x563.jpg" alt="Game 2">
+                            <div class="game-info">
+                                <h3>Clair Obscur: Expedition 33</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://kamikey.com/wp-content/uploads/2025/01/mua-game-the-scourge-tai-uong-1000x563.jpg" alt="Game 2">
+                            <div class="game-info">
+                                <h3>The Scourge</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://kamikey.com/wp-content/uploads/2025/01/FINAL-FANTASY-XV-WINDOWS-EDITION-1000x563.jpg" alt="Game 2">
+                            <div class="game-info">
+                                <h3>FINAL FANTASY XV</h3>
+                            </div>
                         </div>
                     </div>
-            </header>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
+
+        <div class="container-game">
+            <div class="game">
+                <h1 id="game-hot">Game Đang Hot</h1>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2026/03/PRAGMATA-deluxe-banner-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>PRAGMATA Deluxe Edition (Chơi Ngay Khi Ra Mắt) DENUVO – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">
+                        <p>Giá từ: 99.000đ</p>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/03/crimson-desert-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>CRIMSON DESERT DENUVO + Việt Hóa (Chơi Luôn Không Đợi) – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/01/mua-game-the-scourge-tai-uong-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>The Scourge (Tai Ương 1 + 2 Bản Full Mới Nhất) – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 19.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2026/01/Resident-Evil-Requiem-Deluxe-Edition-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Resident Evil Requiem (RE9) Deluxe Edition DENUVO + Việt Hóa – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/10/combo-resident-evil-full-game-1000x559.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Combo 12 Game Resident Evil 2-3-4 Remake 5-6-7-8-9 + DLC DENUVO – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2026/03/DEATH-STRANDING-2-ON-THE-BEACH-Deluxe-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>DEATH STRANDING 2: ON THE BEACH Digital Deluxe + Việt Hóa – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2026/03/Monster-Hunter-Stories-3-Twisted-Reflection-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Monster Hunter Stories 3: Twisted Reflection + Việt Hóa DENUVO – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/10/football-manager-2026-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Football Manager 26 + DLC In-Game Editor DENUVO – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/05/stellar-blade-offline-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Stellar Blade Complete Edition + Việt Hóa DENUVO – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2024/12/black-myth-wukong-steam-offline-mode-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Black Myth: Wukong DENUVO + Việt Hóa – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/06/cach-mua-steam-key-helldivers-2.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>HELLDIVERS 2 – Steam Key Global Chính Hãng</p>
+                    </div>
+                    <div class="game-price">Giá từ: 650.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/03/The-Last-of-Us%E2%84%A2-Part-II-Remastered-offline.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>The Last of Us Part II Remastered + Việt Hóa – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="game">
+                <h1 id="steam-key">STEAM KEY CHÍNH HÃNG</h1>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2026/01/re-animal-Digital-Deluxe-Edition-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>REANIMAL – Steam Key Bản Quyền Chính Hãng</p>
+                    </div>
+                    <div class="game-price">
+                        <p>Giá từ: 450.000đ</p>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/11/Rain-World-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Rain World – Steam Key Global Chính Hãng</p>
+                    </div>
+                    <div class="game-price">Giá từ: 149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/01/Dishonored-2-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Dishonored 2 – Steam Key Bản Quyền Chính Hãng</p>
+                    </div>
+                    <div class="game-price">Giá từ: 119.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/01/Thymesia-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p></p>Thymesia – Steam Key Bản Quyền Chính Hãng</p>
+                    </div>
+                    <div class="game-price">Giá từ: 149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/09/tekken-7-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>TEKKEN 7 – Steam Key Asia Chính Hãng</p>
+                    </div>
+                    <div class="game-price">Giá từ: 249.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/01/FINAL-FANTASY-XV-WINDOWS-EDITION-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>FINAL FANTASY XV WINDOWS EDITION – Steam Key Global Chính Hãng</p>
+                    </div>
+                    <div class="game-price">Giá từ: 449.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/09/Daemon-X-Machina-Titanic-Scion-Digital-Deluxe-Edition-1000x563.jpeg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Daemon X Machina: Titanic Scion – Steam Key Asia Chính Hãng</p>
+                    </div>
+                    <div class="game-price">Giá từ: 1.149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/08/The-Last-of-Us-Part-II-Remastered-steam-key-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>The Last of Us Part II Remastered – Steam Key Asia Chính Hãng</p>
+                    </div>
+                    <div class="game-price">Giá từ: 1.149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/01/DARK-SOULS%E2%84%A2-REMASTERED-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>DARK SOULS: REMASTERED – Steam Key Bản Quyền Chính Hãng</p>
+                    </div>
+                    <div class="game-price">Giá từ: 449.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/07/wo-long-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Wo Long: Fallen Dynasty – Steam Key Bản Quyền Chính Hãng</p>
+                    </div>
+                    <div class="game-price">Giá từ: 449.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/01/Marvels-Spider-Man-Remastered-PC-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Marvel’s Spider-Man Remastered – Steam Key Chính Hãng</p>
+                    </div>
+                    <div class="game-price">Giá từ: 650.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/07/Ghost-of-Tsushima-DIRECTORS-CUT-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Ghost of Tsushima DIRECTOR’S CUT – Steam Key Asia Chính Hãng</p>
+                    </div>
+                    <div class="game-price">Giá từ: 1.149.000đ</div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="game">
+                <h1 id="account-mail">TÀI KHOẢN STEAM MỚI + MAIL</h1>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2026/02/resident-evil-requiem-standard-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Resident Evil Requiem (RE9) – Tài Khoản Steam Online + Mail</p>
+                    </div>
+                    <div class="game-price">
+                        <p>Giá từ: 450.000đ</p>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2026/03/crimson-desert-standard-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>CRIMSON DESERT – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 749.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/01/Ashes-of-Creation-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Ashes of Creation – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 419.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/08/SILENT-HILL-f-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p></p>SILENT HILL f – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 449.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/01/The-Quarry-Deluxe-Edition-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>The Quarry Deluxe Edition – Tài Khoản Steam Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 249.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/05/The-Outlast-Trials-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>The Outlast Trials – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/01/sons-of-the-forest-banner-1000x563.jpeg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Sons Of The Forest – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2024/12/Cyberpunk-2077-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Cyberpunk 2077 – Tài Khoản Steam Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 249.000đ</div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="game">
+                <h1 id="account-off">TÀI KHOẢN STEAM OFFLINE</h1>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2026/03/FATAL-FRAME-II-Crimson-Butterfly-REMAK-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>FATAL FRAME II: Crimson Butterfly REMAKE Digital Deluxe Edition – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">
+                        <p>Giá từ: 49.000đ</p>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/02/elin.jpg" alt=""></a>
+                    <div class="game-if">
+                        <p>Elin – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2026/03/combo-final-fantasy-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Combo 13 Game Final Fantasy – Tài Khoản Steam Offline Nhiều Game</p>
+                    </div>
+                    <div class="game-price">Giá từ: 119.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/03/crimson-desert-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p></p>CRIMSON DESERT DENUVO + Việt Hóa (Chơi Luôn Không Đợi) – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/02/than-trung-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Thần Trùng + Cỏ Máu – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 19.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2026/01/Resident-Evil-Requiem-Deluxe-Edition-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Resident Evil Requiem (RE9) Deluxe Edition DENUVO + Việt Hóa – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/01/nioh-3-deluxe-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Nioh 3 Digital Deluxe Edition – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/11/Like-a-Dragon-Gaiden-The-Man-Who-Erased-His-Name-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Like a Dragon Gaiden: The Man Who Erased His Name Deluxe DENUVO – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/09/Little-Nightmares-3-1-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Little Nightmares III Deluxe Edition + Full DLC – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/10/combo-sherlock-holmes-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Combo 11 Game Sherlock Holmes Complete Adventures + Full DLC – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/10/Batman-Arkham-Collection.jpeg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Combo 8 Game Batman: Arkham Collection + Full DLC – Tài Khoản Steam Offline Nhiều Game</p>
+                    </div>
+                    <div class="game-price">Giá từ: 50.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/10/combo-resident-evil-full-game-1000x559.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Combo 12 Game Resident Evil 2-3-4 Remake 5-6-7-8-9 + DLC DENUVO – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/09/No-Im-not-a-Human-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>No, I’m not a Human + Full DLC + Việt Hóa – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 29.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/09/dying-light-the-beast-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Dying Light: The Beast Deluxe Edition + Việt Hóa – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/09/Alan-Wake-Collectors-Edition.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Alan Wake Collector’s Edition – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 29.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/08/Cronos-The-New-Dawn-Deluxe-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Cronos: The New Dawn Deluxe Edition – Tài Khoản Steam Offline</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="game">
+                <h1 id="account-on">Tài khoản steam online</h1>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2026/02/resident-evil-requiem-standard-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Resident Evil Requiem (RE9) – Tài Khoản Steam Online + Mail</p>
+                    </div>
+                    <div class="game-price">
+                        <p>Giá từ: 549.000đ</p>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2026/03/crimson-desert-standard-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>CRIMSON DESERT – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 749.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/08/SILENT-HILL-f-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>SILENT HILL f – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 449.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/11/Dead-by-Daylight-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Dead by Daylight – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/08/No-More-Room-in-Hell-2-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>No More Room in Hell 2 – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 249.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/01/The-Quarry-Deluxe-Edition-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>The Quarry Deluxe Edition – Tài Khoản Steam Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/02/back4blood-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Back 4 Blood – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/05/The-Outlast-Trials-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>The Outlast Trials – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 149.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/04/the-forest.jpg" alt=""></a>
+                    <div class="game-if">
+                        <p>The Forest – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/04/rust.jpg" alt=""></a>
+                    <div class="game-if">
+                        <p>Rust – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 249.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/04/day-z-1000x563.jpg" alt=""></a>
+                    <div class="game-if">
+                        <p>DayZ – Tài Khoản Steam Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 449.000đ</div>
+                </div>
+
+                <div class="game-card">
+                    <a href=""><img
+                            src="https://kamikey.com/wp-content/uploads/2025/03/Dont-Starve-Together-1000x563.jpg"
+                            alt=""></a>
+                    <div class="game-if">
+                        <p>Don’t Starve Together – Tài Khoản Steam Online Mới + Mail</p>
+                    </div>
+                    <div class="game-price">Giá từ: 49.000đ</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <footer class="container-footer">
+            <div class="foot">
+                <div class="foot-main">
+                    <div class="logo">
+                        <h1>ChonGame<span>.com</span></h1>
+                    </div>
+                    <div class="foot-if">
+                        <p>
+                            <b>LƯU Ý QUAN TRỌNG:</b> Website này được xây dựng với mục đích duy nhất là phục vụ cho bài
+                            tiểu
+                            luận
+                            chuyên ngành. Mọi tính năng và nội dung hiển thị chỉ mang tính chất minh họa, thử nghiệm và
+                            không có
+                            giá trị sử dụng thực tế. Rất mong quý bạn đọc lưu ý để tránh nhầm lẫn.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="foot-aside">
+                    <h3>Theo dõi chúng tôi</h3>
+                    <div class="foot-link">
+                        <i class="fa-brands fa-facebook-f"></i><span>Facebook XXX.XXX</span>
+                    </div>
+                    <div class="foot-link">
+                        <i class="fa-brands fa-instagram"></i><span>Instagram XXX.XXX</span>
+                    </div>
+                    <div class="foot-link">
+                        <i class="fa-brands fa-tiktok"></i><span>TikTok XXX.XXX.XX</span>
+                    </div>
+                    <div class="foot-link">
+                        <i class="fa-regular fa-envelope"></i><span>Email XXX.XXX.XXX.XXX</span>
+                    </div>
+                    <div class="foot-link">
+                        <i class="fa-brands fa-youtube"></i><span>Youtube XXX.XXX</span>
+                    </div>
+                </div>
+
+                <div class="foot-aside">
+                    <h3>Hỗ trợ khách hàng</h3>
+                    <div class="foot-link">
+                        <i class="fa-solid fa-angle-right"></i><span>Điều khoản sử dụng</span>
+                    </div>
+                    <div class="foot-link">
+                        <i class="fa-solid fa-angle-right"></i><span>Quy chế hoạt động</span>
+                    </div>
+                    <div class="foot-link">
+                        <i class="fa-solid fa-angle-right"></i><span>Chính sách thanh toán</span>
+                    </div>
+                    <div class="foot-link">
+                        <i class="fa-solid fa-angle-right"></i><span>Chính sách bảo hành</span>
+                    </div>
+                    <div class="foot-link">
+                        <i class="fa-solid fa-angle-right"></i><span>Chính sách đổi trả</span>
+                    </div>
+                </div>
+
+                <div class="foot-aside">
+                    <h3>Về chúng tôi</h3>
+                    <div class="foot-link">
+                        <i class="fa-solid fa-angle-right"></i><span>Giới thiệu</span>
+                    </div>
+                    <div class="foot-link">
+                        <i class="fa-solid fa-angle-right"></i><span>Liên hệ</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-
-    <div class="container-side-bar">
-        <div class="side-bar">
-            <div class="side-main">
-                <div class="btn-menu">
-                    <button onclick="toggleMenu()">
-                        <span class="menu-icon">
-                            <i class="fa-solid fa-bars"></i>
-                        </span>
-                        Danh mục sản phẩm
-                        <span class="arrow">
-                            <i class="fa-solid fa-angle-down"></i>
-                        </span>
-                    </button>
-
-                    <ul id="menu">
-                        <li><a href="#game-hot">Game Đang Hot</a></li>
-                        <li><a href="#steam-key">Steam Key Chính Hãng</a></li>
-                        <li><a href="#account-mail">Tài Khoản Steam mới và Mail</a></li>
-                        <li><a href="#account-off">Tài Khoản Steam Offline</a></li>
-                        <li><a href="#account-on">Tài Khoản Steam Online</a></li>
-                    </ul>
-                </div>
-
-                <div class="btn-sp">
-                    <a href="#">Trang chủ</a>
-                    <a href="protectuser.html">Chính sách bảo hành</a>
-                    <a href="./protectsp.html">Chính sách đổi trả</a>
-                    <a href="./connect.html">Liên hệ</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <p id="space"></p>
-
-    <div class="container-game">
-        <div class="game">
-            <h1 id="game-hot">Game Đang Hot</h1>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/03/PRAGMATA-deluxe-banner-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>PRAGMATA Deluxe Edition (Chơi Ngay Khi Ra Mắt) DENUVO – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">
-                    <p>Giá từ: 99.000đ</p>
-                </div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/03/crimson-desert-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>CRIMSON DESERT DENUVO + Việt Hóa (Chơi Luôn Không Đợi) – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/01/mua-game-the-scourge-tai-uong-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>The Scourge (Tai Ương 1 + 2 Bản Full Mới Nhất) – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 19.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2026/01/Resident-Evil-Requiem-Deluxe-Edition-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Resident Evil Requiem (RE9) Deluxe Edition DENUVO + Việt Hóa – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/10/combo-resident-evil-full-game-1000x559.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Combo 12 Game Resident Evil 2-3-4 Remake 5-6-7-8-9 + DLC DENUVO – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2026/03/DEATH-STRANDING-2-ON-THE-BEACH-Deluxe-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>DEATH STRANDING 2: ON THE BEACH Digital Deluxe + Việt Hóa – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2026/03/Monster-Hunter-Stories-3-Twisted-Reflection-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Monster Hunter Stories 3: Twisted Reflection + Việt Hóa DENUVO – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/10/football-manager-2026-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Football Manager 26 + DLC In-Game Editor DENUVO – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/05/stellar-blade-offline-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Stellar Blade Complete Edition + Việt Hóa DENUVO – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2024/12/black-myth-wukong-steam-offline-mode-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Black Myth: Wukong DENUVO + Việt Hóa – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/06/cach-mua-steam-key-helldivers-2.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>HELLDIVERS 2 – Steam Key Global Chính Hãng</p>
-                </div>
-                <div class="game-price">Giá từ: 650.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/03/The-Last-of-Us%E2%84%A2-Part-II-Remastered-offline.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>The Last of Us Part II Remastered + Việt Hóa – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-        </div>
-
-
-
-
-
-
-        <div class="game">
-            <h1 id="steam-key">STEAM KEY CHÍNH HÃNG</h1>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2026/01/re-animal-Digital-Deluxe-Edition-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>REANIMAL – Steam Key Bản Quyền Chính Hãng</p>
-                </div>
-                <div class="game-price">
-                    <p>Giá từ: 450.000đ</p>
-                </div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/11/Rain-World-1000x563.jpg" alt=""></a>
-                <div class="game-if">
-                    <p>Rain World – Steam Key Global Chính Hãng</p>
-                </div>
-                <div class="game-price">Giá từ: 149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/01/Dishonored-2-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Dishonored 2 – Steam Key Bản Quyền Chính Hãng</p>
-                </div>
-                <div class="game-price">Giá từ: 119.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/01/Thymesia-1000x563.jpg" alt=""></a>
-                <div class="game-if">
-                    <p></p>Thymesia – Steam Key Bản Quyền Chính Hãng</p>
-                </div>
-                <div class="game-price">Giá từ: 149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/09/tekken-7-1000x563.jpg" alt=""></a>
-                <div class="game-if">
-                    <p>TEKKEN 7 – Steam Key Asia Chính Hãng</p>
-                </div>
-                <div class="game-price">Giá từ: 249.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/01/FINAL-FANTASY-XV-WINDOWS-EDITION-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>FINAL FANTASY XV WINDOWS EDITION – Steam Key Global Chính Hãng</p>
-                </div>
-                <div class="game-price">Giá từ: 449.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/09/Daemon-X-Machina-Titanic-Scion-Digital-Deluxe-Edition-1000x563.jpeg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Daemon X Machina: Titanic Scion – Steam Key Asia Chính Hãng</p>
-                </div>
-                <div class="game-price">Giá từ: 1.149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/08/The-Last-of-Us-Part-II-Remastered-steam-key-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>The Last of Us Part II Remastered – Steam Key Asia Chính Hãng</p>
-                </div>
-                <div class="game-price">Giá từ: 1.149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/01/DARK-SOULS%E2%84%A2-REMASTERED-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>DARK SOULS: REMASTERED – Steam Key Bản Quyền Chính Hãng</p>
-                </div>
-                <div class="game-price">Giá từ: 449.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/07/wo-long-1000x563.jpg" alt=""></a>
-                <div class="game-if">
-                    <p>Wo Long: Fallen Dynasty – Steam Key Bản Quyền Chính Hãng</p>
-                </div>
-                <div class="game-price">Giá từ: 449.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/01/Marvels-Spider-Man-Remastered-PC-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Marvel’s Spider-Man Remastered – Steam Key Chính Hãng</p>
-                </div>
-                <div class="game-price">Giá từ: 650.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/07/Ghost-of-Tsushima-DIRECTORS-CUT-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Ghost of Tsushima DIRECTOR’S CUT – Steam Key Asia Chính Hãng</p>
-                </div>
-                <div class="game-price">Giá từ: 1.149.000đ</div>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="game">
-            <h1 id="account-mail">TÀI KHOẢN STEAM MỚI + MAIL</h1>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2026/02/resident-evil-requiem-standard-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Resident Evil Requiem (RE9) – Tài Khoản Steam Online + Mail</p>
-                </div>
-                <div class="game-price">
-                    <p>Giá từ: 450.000đ</p>
-                </div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2026/03/crimson-desert-standard-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>CRIMSON DESERT – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 749.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/01/Ashes-of-Creation-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Ashes of Creation – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 419.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/08/SILENT-HILL-f-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p></p>SILENT HILL f – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 449.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/01/The-Quarry-Deluxe-Edition-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>The Quarry Deluxe Edition – Tài Khoản Steam Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 249.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/05/The-Outlast-Trials-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>The Outlast Trials – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/01/sons-of-the-forest-banner-1000x563.jpeg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Sons Of The Forest – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2024/12/Cyberpunk-2077-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Cyberpunk 2077 – Tài Khoản Steam Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 249.000đ</div>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="game">
-            <h1 id="account-off">TÀI KHOẢN STEAM OFFLINE</h1>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2026/03/FATAL-FRAME-II-Crimson-Butterfly-REMAK-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>FATAL FRAME II: Crimson Butterfly REMAKE Digital Deluxe Edition – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">
-                    <p>Giá từ: 49.000đ</p>
-                </div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/02/elin.jpg" alt=""></a>
-                <div class="game-if">
-                    <p>Elin – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/03/combo-final-fantasy-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Combo 13 Game Final Fantasy – Tài Khoản Steam Offline Nhiều Game</p>
-                </div>
-                <div class="game-price">Giá từ: 119.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/03/crimson-desert-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p></p>CRIMSON DESERT DENUVO + Việt Hóa (Chơi Luôn Không Đợi) – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/02/than-trung-1000x563.jpg" alt=""></a>
-                <div class="game-if">
-                    <p>Thần Trùng + Cỏ Máu – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 19.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2026/01/Resident-Evil-Requiem-Deluxe-Edition-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Resident Evil Requiem (RE9) Deluxe Edition DENUVO + Việt Hóa – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/01/nioh-3-deluxe-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Nioh 3 Digital Deluxe Edition – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/11/Like-a-Dragon-Gaiden-The-Man-Who-Erased-His-Name-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Like a Dragon Gaiden: The Man Who Erased His Name Deluxe DENUVO – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/09/Little-Nightmares-3-1-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Little Nightmares III Deluxe Edition + Full DLC – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/10/combo-sherlock-holmes-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Combo 11 Game Sherlock Holmes Complete Adventures + Full DLC – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/10/Batman-Arkham-Collection.jpeg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Combo 8 Game Batman: Arkham Collection + Full DLC – Tài Khoản Steam Offline Nhiều Game</p>
-                </div>
-                <div class="game-price">Giá từ: 50.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/10/combo-resident-evil-full-game-1000x559.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Combo 12 Game Resident Evil 2-3-4 Remake 5-6-7-8-9 + DLC DENUVO – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/09/No-Im-not-a-Human-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>No, I’m not a Human + Full DLC + Việt Hóa – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 29.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/09/dying-light-the-beast-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Dying Light: The Beast Deluxe Edition + Việt Hóa – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/09/Alan-Wake-Collectors-Edition.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Alan Wake Collector’s Edition – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 29.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/08/Cronos-The-New-Dawn-Deluxe-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Cronos: The New Dawn Deluxe Edition – Tài Khoản Steam Offline</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="game">
-            <h1 id="account-on">Tài khoản steam online</h1>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2026/02/resident-evil-requiem-standard-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Resident Evil Requiem (RE9) – Tài Khoản Steam Online + Mail</p>
-                </div>
-                <div class="game-price">
-                    <p>Giá từ: 549.000đ</p>
-                </div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2026/03/crimson-desert-standard-1000x563.jpg" alt=""></a>
-                <div class="game-if">
-                    <p>CRIMSON DESERT – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 749.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/08/SILENT-HILL-f-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>SILENT HILL f – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 449.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/11/Dead-by-Daylight-1000x563.jpg" alt=""></a>
-                <div class="game-if">
-                    <p>Dead by Daylight – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/08/No-More-Room-in-Hell-2-1000x563.jpg" alt=""></a>
-                <div class="game-if">
-                    <p>No More Room in Hell 2 – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 249.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/01/The-Quarry-Deluxe-Edition-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>The Quarry Deluxe Edition – Tài Khoản Steam Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/02/back4blood-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Back 4 Blood – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/05/The-Outlast-Trials-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>The Outlast Trials – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 149.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/04/the-forest.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>The Forest – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img src="https://kamikey.com/wp-content/uploads/2025/04/rust.jpg" alt=""></a>
-                <div class="game-if">
-                    <p>Rust – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 249.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/04/day-z-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>DayZ – Tài Khoản Steam Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 449.000đ</div>
-            </div>
-
-            <div class="game-card">
-                <a href=""><img
-                        src="https://kamikey.com/wp-content/uploads/2025/03/Dont-Starve-Together-1000x563.jpg"
-                        alt=""></a>
-                <div class="game-if">
-                    <p>Don’t Starve Together – Tài Khoản Steam Online Mới + Mail</p>
-                </div>
-                <div class="game-price">Giá từ: 49.000đ</div>
-            </div>
-        </div>
-    </div>
-
-
-    
-    
-    <footer class="container-footer">
-        <div class="foot">
-            <div class="foot-main">
-                <div class="logo">
-                    <h1>ChonGame<span>.com</span></h1>
-                </div>
-                <div class="foot-if">
-                    <p>
-                        <b>LƯU Ý QUAN TRỌNG:</b> Website này được xây dựng với mục đích duy nhất là phục vụ cho bài tiểu
-                        luận
-                        chuyên ngành. Mọi tính năng và nội dung hiển thị chỉ mang tính chất minh họa, thử nghiệm và
-                        không có
-                        giá trị sử dụng thực tế. Rất mong quý bạn đọc lưu ý để tránh nhầm lẫn.
-                    </p>
-                </div>
-            </div>
-
-            <div class="foot-aside">
-                <h3>Theo dõi chúng tôi</h3>
-                <div class="foot-link">
-                    <i class="fa-brands fa-facebook-f"></i><span>Facebook XXX.XXX</span>
-                </div>
-                <div class="foot-link">
-                    <i class="fa-brands fa-instagram"></i><span>Instagram XXX.XXX</span>
-                </div>
-                <div class="foot-link">
-                    <i class="fa-brands fa-tiktok"></i><span>TikTok XXX.XXX.XX</span>
-                </div>
-                <div class="foot-link">
-                    <i class="fa-regular fa-envelope"></i><span>Email XXX.XXX.XXX.XXX</span>
-                </div>
-                <div class="foot-link">
-                    <i class="fa-brands fa-youtube"></i><span>Youtube XXX.XXX</span>
-                </div>
-            </div>
-
-            <div class="foot-aside">
-                <h3>Hỗ trợ khách hàng</h3>
-                <div class="foot-link">
-                    <i class="fa-solid fa-angle-right"></i><span>Điều khoản sử dụng</span>
-                </div>
-                <div class="foot-link">
-                    <i class="fa-solid fa-angle-right"></i><span>Quy chế hoạt động</span>
-                </div>
-                <div class="foot-link">
-                    <i class="fa-solid fa-angle-right"></i><span>Chính sách thanh toán</span>
-                </div>
-                <div class="foot-link">
-                    <i class="fa-solid fa-angle-right"></i><span>Chính sách bảo hành</span>
-                </div>
-                <div class="foot-link">
-                    <i class="fa-solid fa-angle-right"></i><span>Chính sách đổi trả</span>
-                </div>
-            </div>
-
-            <div class="foot-aside">
-                <h3>Về chúng tôi</h3>
-                <div class="foot-link">
-                    <i class="fa-solid fa-angle-right"></i><span>Giới thiệu</span>
-                </div>
-                <div class="foot-link">
-                    <i class="fa-solid fa-angle-right"></i><span>Liên hệ</span>
-                </div>
-            </div>
-        </div>
-    </footer>
     <script src="home.js"></script>
 </body>
 

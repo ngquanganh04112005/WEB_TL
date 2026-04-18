@@ -13,17 +13,24 @@ function toggleMenu() {
 }
 
 
-/* Thanh trượt */
-let currentIndex = 0;
-function moveSlide(direction) {
-    const track = document.getElementById('track');
-    const groups = document.querySelectorAll('.featured-group');
-    
-    currentIndex += direction;
-    
-    if (currentIndex < 0) currentIndex = groups.length - 1;
-    if (currentIndex >= groups.length) currentIndex = 0;
-    
-    track.style.transform = `translateX(-${currentIndex * 900}px)`;
-}
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    // Hiệu ứng chuyển cảnh mượt (tùy chọn)
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+});
 
