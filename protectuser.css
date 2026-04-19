@@ -1,0 +1,129 @@
+:root {
+    --main-bg: #ffffffb2;
+    --main-text: #000000;
+    --text-color: white;
+    --main-red: #e60023;
+
+    --hover-red: #ff3352;
+    --hover-dark: #333333;
+
+    --gray-medium: #ccc;
+
+    --font-main: 'Roboto', sans-serif;
+    /* Hoặc */
+    --font-heading: 'Montserrat', sans-serif;
+
+    --bg-card: #f5f5f5;
+}
+
+.container0{
+    background-color: var(--bg-card);
+}
+
+.container {
+    padding: 30px 0;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.breadcrumb {
+    color: var(--main-text);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Chia lưới 2 cột */
+.policy-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 60px;
+    /* Khoảng cách dọc 40px, ngang 60px */
+}
+
+.policy-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.policy-title {
+    color: var(--main-text);
+    /* Màu xanh đậm giống hình */
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.policy-date {
+    color: #999;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.policy-excerpt {
+    color: #666;
+    line-height: 1.6;
+    font-size: 13px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    /* Đường kẻ ngang mờ */
+    padding-bottom: 20px;
+}
+
+/* Hiệu ứng ẩn/hiện nội dung đầy đủ */
+.full-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.policy-item.active .full-text {
+    max-height: 1000px;
+    /* Mở rộng khi active */
+    margin-top: 15px;
+}
+
+.comment-count {
+    font-size: 11px;
+    color: #aaa;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+}
+
+/* Nút XEM THÊM màu đỏ */
+.read-more-btn {
+    background: none;
+    border: none;
+    color: #e60000;
+    /* Màu đỏ */
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.read-more-btn:hover {
+    color: var(--main-text);
+}
+
+/* Mobile: 1 cột */
+@media (max-width: 768px) {
+    .policy-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.title{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--main-text);
+    text-transform: uppercase;
+}
+
+.title h1{
+    font-size: 23px;
+}

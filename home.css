@@ -371,14 +371,14 @@ html{
 }
 
 .slider-wrapper {
-  max-width: 890px;
+  max-width: 700px;
   margin: 40px auto; /* Căn giữa đều 2 bên */
   position: relative;
 }
 
 .swiper {
   width: 100%;
-  height: 450px;
+  height: 350px;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -417,20 +417,6 @@ html{
   font-size: 14px !important;
   color: var(--gray-medium);
   font-weight: bold;
-}
-
-/* Thông tin game */
-.game-info {
-  position: absolute;
-  bottom: 30px;
-  left: 30px;
-  color: white;
-  z-index: 2;
-  text-align: left;
-}
-
-.game-info h3{
-    text-transform: uppercase;
 }
 
 /* --- CHỈNH MÀU CHO CÁC DẤU CHẤM (TRANG) --- */
