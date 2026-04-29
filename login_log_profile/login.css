@@ -1,38 +1,46 @@
 :root {
-    --main-bg: #ffffffb2;
-    --main-text: #000000;
-    --text-color:white;
+    --main-bg: #151515;
+    /* Nền nội dung */
+    --bg-header-footer: #050505;
+    /* Nền tối hơn cho Header/Footer */
+    --main-text: #f0f0f0;
+    /* Chữ xám sáng */
+    --text-color: #ffffff;
+    /* Chữ trắng tinh */
     --main-red: #e60023;
-
+    /* Đỏ chủ đạo */
     --hover-red: #ff3352;
-    --hover-dark: #333333;
-
-    --gray-medium: #ccc;  
-
+    /* Đỏ sáng khi hover */
+    --hover-dark: #222222;
+    /* Đen nhạt khi hover */
+    --gray-medium: #333333;
+    /* Xám cho viền */
     --font-main: 'Roboto', sans-serif;
-    /* Hoặc */
     --font-heading: 'Montserrat', sans-serif;
-
-    --bg-card:#f5f5f5;
+    --bg-card: #1e1e1e;
+    /* Nền thẻ game */
+    --border-color: #2a2a2a;
+    /* Viền nhẹ */
 }
 
 .container-page-login {
     min-height: 600px;
-    display: flex; /* Căn giữa form theo cả 2 chiều */
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: var(--main-bg);
     padding: 20px;
 }
 
 .page-login {
-    background-color: var(--main-bg);
+    background-color: var(--bg-card);
     width: 100%;
     max-width: 400px;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px); /* Hiệu ứng mờ ảo nếu nền là ảnh */
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
 }
 
 .page-login h2 {
@@ -60,7 +68,9 @@
 .input-group input {
     width: 100%;
     padding: 12px 15px 12px 45px;
-    border: 1px solid var(--gray-medium);
+    border: 1px solid var(--border-color);
+    background-color: var(--main-bg);
+    color: var(--main-text);
     border-radius: 6px;
     outline: none;
     transition: all 0.3s;
@@ -68,7 +78,7 @@
 
 .input-group input:focus {
     border-color: var(--main-red);
-    box-shadow: 0 0 5px rgba(230, 0, 35, 0.2);
+    box-shadow: 0 0 5px rgba(139, 92, 246, 0.2);
 }
 
 /* Options & Button */
@@ -101,8 +111,13 @@
     background-color: var(--hover-red);
 }
 
+.form-options label {
+    color: white;
+}
+
 .register-link {
     margin-top: 20px;
+    color: white;
     font-size: 14px;
 }
 
@@ -114,16 +129,20 @@
 
 @media (max-width: 1024px) {
     .game-container {
-        grid-template-columns: repeat(2, 1fr); /* Còn 2 cột */
+        grid-template-columns: repeat(2, 1fr);
+        /* Còn 2 cột */
     }
 }
 
 /* Cho điện thoại (Dưới 600px) */
 @media (max-width: 600px) {
     .game-container {
-        grid-template-columns: 1fr; /* Chỉ 1 cột duy nhất */
+        grid-template-columns: 1fr;
+        /* Chỉ 1 cột duy nhất */
     }
+
     .header-title {
-        font-size: 1.2rem; /* Giảm cỡ chữ tiêu đề */
+        font-size: 1.2rem;
+        /* Giảm cỡ chữ tiêu đề */
     }
 }

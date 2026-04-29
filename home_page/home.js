@@ -1,15 +1,9 @@
-/* Menu */
 function toggleMenu() {
     const menu = document.getElementById("menu");
     const arrow = document.querySelector(".arrow");
-
-    if (menu.style.display === "block") {
-        menu.style.display = "none";
-        arrow.classList.remove("rotate");
-    } else {
-        menu.style.display = "block";
-        arrow.classList.add("rotate");
-    }
+    
+    menu.classList.toggle("active");
+    arrow.classList.toggle("rotate");
 }
 
 

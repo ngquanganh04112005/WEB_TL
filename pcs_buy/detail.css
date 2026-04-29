@@ -1,0 +1,140 @@
+:root {
+    --main-bg: #151515;
+    /* Nền nội dung */
+    --bg-header-footer: #050505;
+    /* Nền tối hơn cho Header/Footer */
+    --main-text: #f0f0f0;
+    /* Chữ xám sáng */
+    --text-color: #ffffff;
+    /* Chữ trắng tinh */
+    --main-red: #e60023;
+    /* Đỏ chủ đạo */
+    --hover-red: #ff3352;
+    /* Đỏ sáng khi hover */
+    --hover-dark: #222222;
+    /* Đen nhạt khi hover */
+    --gray-medium: #333333;
+    /* Xám cho viền */
+    --font-main: 'Roboto', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+    --bg-card: #1e1e1e;
+    /* Nền thẻ game */
+    --border-color: #2a2a2a;
+    /* Viền nhẹ */
+}
+
+/* CSS dành riêng cho trang chi tiết sản phẩm */
+.main-layout {
+    background-color: var(--main-bg);
+}
+
+.detail-container {
+    background-color: var(--main-bg);
+}
+
+.detail-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.detail-left {
+    flex: 1;
+}
+
+.detail-left img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detail-right {
+    flex: 1;
+}
+
+.breadcrumb {
+    font-size: 13px;
+    color: var(--text-muted, #94a3b8);
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--main-text);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.price-detail {
+    font-size: 24px;
+    color: var(--main-red);
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.product-info-box {
+    background: rgba(230, 0, 35, 0.1);
+    border-left: 5px solid var(--main-red);
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+}
+
+.product-info-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-info-box li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: var(--main-text);
+    display: flex;
+    align-items: center;
+}
+
+.product-info-box li::before {
+    content: "✔";
+    color: #27ae60;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btn-buy {
+    background: var(--main-red);
+    color: #fff !important;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    background: var(--hover-red);
+}
+
+.btn-cart {
+    background: #3498db;
+    color: #fff !important;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+

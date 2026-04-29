@@ -64,3 +64,46 @@
             </div>
         </div>
     </footer>
+
+    <button id="backToTop" title="Quay lại đầu trang">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        var mybutton = document.getElementById("backToTop");
+
+        // Hiện nút khi cuộn xuống 300px
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+
+        // Cuộn mượt lên đầu trang
+        mybutton.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    </script>
+
+    <style>
+        #backToTop {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9999; /* Để luôn nằm trên cùng */
+            border: none;
+            outline: none;
+            background-color: var(--main-red, #ff0000); 
+            color: white;
+            cursor: pointer;
+            padding: 12px 15px;
+            border-radius: 50%;
+            font-size: 18px;
+        }
+    </style>
