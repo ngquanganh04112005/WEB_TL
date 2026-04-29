@@ -1,10 +1,12 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$dbname = "chongame_db"; // Tên database bạn đã tạo
+// Sử dụng biến môi trường (Environment Variables) cho Railway, hoặc mặc định cho local
+$host = getenv('MYSQLHOST') ?: "localhost";
+$user = getenv('MYSQLUSER') ?: "root";
+$pass = getenv('MYSQLPASSWORD') ?: "";
+$dbname = getenv('MYSQLDATABASE') ?: "chongame_db";
+$port = getenv('MYSQLPORT') ?: "3306";
 
-$conn = mysqli_connect($host, $user, $pass, $dbname);
+$conn = mysqli_connect($host, $user, $pass, $dbname, $port);
 
 // Kiểm tra nếu kết nối lỗi
 if (!$conn) {

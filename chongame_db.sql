@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 27, 2026 lúc 05:18 AM
+-- Thời gian đã tạo: Th4 29, 2026 lúc 04:13 AM
 -- Phiên bản máy phục vụ: 10.4.32-MariaDB
 -- Phiên bản PHP: 8.2.12
 
@@ -56,18 +56,24 @@ CREATE TABLE `don_hang` (
   `email` varchar(100) DEFAULT NULL,
   `so_dien_thoai` varchar(20) DEFAULT NULL,
   `tong_tien` decimal(10,2) DEFAULT NULL,
-  `ngay_mua` timestamp NOT NULL DEFAULT current_timestamp()
+  `ngay_mua` timestamp NOT NULL DEFAULT current_timestamp(),
+  `trang_thai` varchar(50) NOT NULL DEFAULT 'Chờ xử lý' COMMENT 'Chờ xử lý / Hoàn thành / Đã huỷ'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `don_hang`
 --
 
-INSERT INTO `don_hang` (`ma_don_hang`, `ma_nguoi_dung`, `ma_san_pham`, `ma_kho_hang`, `email`, `so_dien_thoai`, `tong_tien`, `ngay_mua`) VALUES
-(1, 2, 45, 1, 'ngquanganh411205@gmail.com', '0909090909', 99000.00, '2026-04-22 08:54:22'),
-(2, 1, 45, 1, 'ngquanganh411205@gmail.com', '1', 99000.00, '2026-04-22 10:58:40'),
-(3, 1, 8, 1, 'ngquanganh411205@gmail.com', '1', 1149000.00, '2026-04-22 10:58:53'),
-(4, 2, 49, 1, 'ngquanganh411205@gmail.com', '0909090909', 49000.00, '2026-04-22 17:16:14');
+INSERT INTO `don_hang` (`ma_don_hang`, `ma_nguoi_dung`, `ma_san_pham`, `ma_kho_hang`, `email`, `so_dien_thoai`, `tong_tien`, `ngay_mua`, `trang_thai`) VALUES
+(1, 2, 45, 1, 'ngquanganh411205@gmail.com', '0909090909', 99000.00, '2026-04-22 08:54:22', 'Chờ xử lý'),
+(2, 1, 45, 1, 'ngquanganh411205@gmail.com', '1', 99000.00, '2026-04-22 10:58:40', 'Chờ xử lý'),
+(3, 1, 8, 1, 'ngquanganh411205@gmail.com', '1', 1149000.00, '2026-04-22 10:58:53', 'Chờ xử lý'),
+(4, 2, 49, 1, 'ngquanganh411205@gmail.com', '0909090909', 49000.00, '2026-04-22 17:16:14', 'Chờ xử lý'),
+(5, 2, 47, 1, 'ngquanganh411205@gmail.com', '0909090909', 49000.00, '2026-04-27 08:52:02', 'Chờ xử lý'),
+(6, 2, 49, 1, 'ngquanganh411205@gmail.com', '0909090909', 49000.00, '2026-04-27 08:52:02', 'Chờ xử lý'),
+(7, 1, 45, 1, 'ngquanganh411205@gmail.com', '0909090909', 99000.00, '2026-04-27 08:58:13', 'Chờ xử lý'),
+(8, 1, 47, 1, 'ngquanganh411205@gmail.com', '0909090909', 49000.00, '2026-04-28 01:16:19', 'Chờ xử lý'),
+(9, 1, 11, 1, 'ngquanganh411205@gmail.com', '0909090909', 650000.00, '2026-04-28 01:32:57', 'Chờ xử lý');
 
 -- --------------------------------------------------------
 
@@ -231,7 +237,8 @@ INSERT INTO `san_pham` (`ma_san_pham`, `ten_game`, `the_loai`, `mo_ta`, `anh_bia
 (50, 'Stellar Blade Complete Edition', NULL, 'Việt Hóa DENUVO – Tài Khoản Steam Offline', 'https://kamikey.com/wp-content/uploads/2025/05/stellar-blade-offline-1000x563.jpg', 49000.00, 2, 1),
 (51, 'Black Myth: Wukong', NULL, 'DENUVO + Việt Hóa – Tài Khoản Steam Offline', 'https://kamikey.com/wp-content/uploads/2024/12/black-myth-wukong-steam-offline-mode-1000x563.jpg', 49000.00, 2, 1),
 (53, 'Monster Hunter Stories 3', NULL, 'Việt Hóa DENUVO cực hay', 'https://kamikey.com/wp-content/uploads/2026/03/Monster-Hunter-Stories-3-Twisted-Reflection-1000x563.jpg', 49000.00, 2, 1),
-(54, 'HELLDIVERS 2', NULL, 'Việt hoá + Denuvo - Tài khoản Steam Offline', 'https://kamikey.com/wp-content/uploads/2025/06/cach-mua-steam-key-helldivers-2.jpg', 65000.00, 2, 1);
+(54, 'HELLDIVERS 2', NULL, 'Việt hoá + Denuvo - Tài khoản Steam Offline', 'https://kamikey.com/wp-content/uploads/2025/06/cach-mua-steam-key-helldivers-2.jpg', 65000.00, 2, 1),
+(57, 'Grand Theft Auto V (GTA 5)', 'Action', 'Grand Theft Auto V (GTA 5) – Tài Khoản Steam Online Mới + Mail', 'https://kamikey.com/wp-content/uploads/2024/12/gta-5-steam-1000x563.jpg', 320000.00, 4, 0);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -287,7 +294,7 @@ ALTER TABLE `danh_muc`
 -- AUTO_INCREMENT cho bảng `don_hang`
 --
 ALTER TABLE `don_hang`
-  MODIFY `ma_don_hang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ma_don_hang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT cho bảng `kho_hang`
@@ -305,7 +312,7 @@ ALTER TABLE `nguoi_dung`
 -- AUTO_INCREMENT cho bảng `san_pham`
 --
 ALTER TABLE `san_pham`
-  MODIFY `ma_san_pham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `ma_san_pham` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- Các ràng buộc cho các bảng đã đổ
